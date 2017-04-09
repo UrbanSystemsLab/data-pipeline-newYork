@@ -2,6 +2,8 @@
 Collating documentation for data conversion for various layers
 The visualization is built on 
 
+![img/mapbox.png](img/mapbox.png)
+
 ## Mapbox-GL Layers
 - 3D buildings
 - Planimetrics Features
@@ -11,8 +13,7 @@ The visualization is built on
 - Flood Risk
 
 ## Open Map Tiles: 3D buildings
-
-![img/mapbox.png](img/mapbox.png)
+![img/tileserver.png](img/tileserver.png)
 
 #### *Dataset* :
 You can find the Open Map Tiles data [here](https://openmaptiles.org/downloads/#city). Search for New York or use this direct link: [OpenMapTiles.org](https://openmaptiles.os.zhdk.cloud.switch.ch/v3.3/extracts/new-york_new-york.mbtiles). 
@@ -30,7 +31,8 @@ The dataset is also made available by [Overpass API](overpass-api.de)
 To visualize the dataset refer to [3D-city-buildings](https://github.com/UrbanEcologyLab/3d-city-buildings)
 
 ## MapPluto Dataset : City Lots
-The modelling was done at lot level. The attributes to be visualized were added to MapPluto Dataset as additional columns.
+![img/lots.png](img/lots.png)
+The open dataset is provided by [NYC Department of City Planning](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page). It contains building lots and the risk assessment modelling was performed at lot level. The attributes to be visualized were added to MapPluto Dataset as additional columns. The final lots data served as a base layer from which the properties were ported building features inside each respective lot. This was done through [spatial-merge](https://github.com/UrbanEcologyLab/turf-spatial-merge)
 
 #### *Description* :
 **Layers** *TODO: Add source of datasets*
@@ -44,11 +46,10 @@ The modelling was done at lot level. The attributes to be visualized were added 
 
 --- 	
 
-![img/tileserver.png](img/tileserver.png)
 
 #### MbTiles Schema
 
-```json
+```js
 {
   "id": "way/146394788", // Open Map Tile Feature Id
   "height": "43", // Building feature extrude height
