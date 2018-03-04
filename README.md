@@ -44,4 +44,5 @@ To visualize the dataset in Mapbox-Gl refer to [3D-city-buildings-newYork](https
 The open dataset is provided by [NYC Department of City Planning](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page).
 
 #### *Description* :
-It contains building lots and the risk assessment modelling was performed at lot level. The attributes to be visualized were added to MapPluto Dataset as additional columns. The final lots data served as a base layer from which the properties were ported building features inside each respective lot. This was done through [spatial-merge](https://github.com/UrbanEcologyLab/turf-spatial-merge)
+It contains building lots and the risk assessment modelling was performed at lot level. The attributes to be visualized were added to MapPluto Dataset as additional columns. The final lots data served as a base layer from which the properties were ported building features inside each respective lot. This was done through [spatial-merge](https://github.com/UrbanSystemsLab/turfjs-spatial-merge)
+Alternatively, use [spatial-join-mongodb](https://github.com/UrbanSystemsLab/spatial-join-mongodb) for easier usage and faster performance.
